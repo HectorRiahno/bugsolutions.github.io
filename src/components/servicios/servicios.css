@@ -1,0 +1,42 @@
+#services {
+    background: #f8f9fa;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card i {
+    color: #007bff;
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: #6c757d;
+  }
+#services {
+  background: #f8f9fa;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.card i {
+  color: #007bff;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  color: #6c757d;
+}
+
+  

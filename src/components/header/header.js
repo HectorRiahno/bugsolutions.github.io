@@ -9,18 +9,23 @@ function Header() {
         <img className="img-logo-header" src={bugsLogo} alt="Logo" />
         <div className='header-1'>
           <div className="header-div">
-              <p>HOME</p>
+              <a href="" className='btn btn-1'>Store</a>
           </div>
           <div className="header-div">
-              <p>ABAUT</p>
+              <a href="" className='btn btn-1'>Abaut</a>
           </div>
           <div className="header-div">
-              <p>SERVICES</p>
+              <a href="" className='btn btn-1'>Services</a>
           </div>
         </div>
-        <div className="contact">
-              <p>CONTACT</p>
-          </div>
+        <div className="header-div">
+             <a href="" className='btn btn-1 '>
+                Sing-up
+              </a>
+              <a href="" className='btn btn-1 '>
+                Login
+              </a>
+        </div>
       </header>
     
   );
