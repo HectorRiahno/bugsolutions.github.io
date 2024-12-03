@@ -2,45 +2,56 @@ import React from "react";
 import "./presentacion.css";
 
 function Presentacion() {
-  const noticias=[
+  const noticias = [
     {
-      title:"titulosdad",
-      info:"informacion",
+      title: "titulosdad",
+      info: "informacion",
     },
     {
-      title:"titulo",
-      info:"informacion",
-    }
-  ]
-  
+      title: "titulo",
+      info: "informacion",
+    },
+    {
+      title: "titulo",
+      info: "informacion",
+    },
+    {
+      title: "titulo",
+      info: "informacion",
+    },
+  ];
+
   return (
-    <div className="presentacion-container">
+    // <div className="presentacion-container text center">
+    <div className="cover-container">
+      <header className="mb-5">
+        <h1 className="cover-heading">Welcome to Bug Solutions</h1>
+        <p className="lead">We solve your bugs, so you don't have to.</p>
+      </header>
 
-      <div className="cover-container text-center d-flex flex-column justify-content-center align-items-center">
-        <header className="mb-5">
-          <h1 className="cover-heading">Welcome to Bug Solutions</h1>
-          <p className="lead">We solve your bugs, so you don't have to.</p>
-        </header>
-
-        <div className="info-card">
-        {noticias.map((noticias,i)=>(
-          <div key={i} className="col-md-2 mb-2">
-            <div className="card-body">
-              <p className="card-title">{noticias.title}</p>
-              <p className="card-text">{noticias.info}</p>
+      <div className="info-card">
+        {noticias.map((noticia, i) => (
+          <div
+            key={i}
+            className={`d-flex justify-content-${i % 2 === 0 ? "end" : "start"} 
+            ${i % 2 === 0 ? "margin-right" : "margin-left"}`}
+          >
+            <div className="card col-md-6">
+              <div className="card-body">
+                <p className="card-title">{noticia.title}</p>
+                <p className="card-text">{noticia.info}</p>
+              </div>
             </div>
           </div>
-        )
-        )}
+        ))}
       </div>
-      </div>
-
-      
     </div>
+    // </div>
   );
 }
 
 export default Presentacion;
+
 // const services = [
 //   {
 //     title: "Desarrollo Web",
